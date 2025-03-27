@@ -1,0 +1,18 @@
+include ../ui/svg-icon/svg-icon.pug
+
+mixin feedback(author, description)
+	.feedback.js-feedback
+		.feedback__company 
+			.feedback__header
+				.feedback__avatar
+					img(src="../../../img/avatar.png", alt="Аватарка компании")
+				.feedback__info
+					.feedback__rating
+						+svg-icon('star')
+						+svg-icon('star')
+						+svg-icon('star')
+						+svg-icon('star')
+						+svg-icon('star')
+					h3.feedback__name=author
+
+			.feedback__description.js-feedback-description=description

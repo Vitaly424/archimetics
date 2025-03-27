@@ -1,0 +1,50 @@
+include ../../../components/news-card/news-card
+
+section.blog-news
+	.container
+		.blog-news__inner
+			.blog-news__row
+				.blog-news__header
+					h2.blog-news__title Все новости
+
+				.blog-news__list 
+					each item in news.items.slice(0, 3)
+						+news-card(
+							item.title, 
+							item.description, 
+							item.date, 
+							item.urlImage, 
+							item.altImage, 
+							item.urlLink
+						)
+ 
+			.blog-news__row
+				.blog-news__header
+					h2.blog-news__title Февраль 2025
+
+				.blog-news__list 
+					each item in news.items.slice(3, 6)
+						+news-card(
+							item.title, 
+							item.description, 
+							item.date, 
+							item.urlImage, 
+							item.altImage, 
+							item.urlLink
+						)
+				 
+
+			.blog-news__row
+				.blog-news__header
+					h2.blog-news__title Январь 2025
+
+				.blog-news__list 
+					each item in news.items.slice(6, 9)
+						+news-card(
+							item.title, 
+							item.description, 
+							item.date, 
+							item.urlImage, 
+							item.altImage, 
+							item.urlLink
+						)

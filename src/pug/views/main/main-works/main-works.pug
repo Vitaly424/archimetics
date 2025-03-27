@@ -1,0 +1,24 @@
+include ../../../components/ui/section-title/section-title.pug
+include ../../../components/ui/button-link/button-link.pug
+include ../../../components/project-card/project-card.pug
+
+section.main-works
+	.container
+		+section-title("Портфолио", "Готовые работы")
+		.main-works__slider
+			.swiper.main-works__projects.js-main-works-slider
+				.swiper-wrapper
+					each item in projects.items.slice(0, 3)
+						.swiper-slide
+							+project-card(
+								item.title, 
+								item.urlImage, 
+								item.altImage, 
+								item.description,
+								item.info
+							)
+		 
+			.main-works__pagination.js-main-works-pagination
+
+ 
+		+button-link('Все проекты', '', '/portfolio.html')

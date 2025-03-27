@@ -1,0 +1,13 @@
+include ../../components/ui/button/button.pug
+
+section.contacts-section 
+	.container
+		.contacts-section__header
+			h2.contacts-section__title Готовы обсудить ваш проект?
+			p.contacts-section__description Оставьте свои контакты, и мы свяжемся с вами, чтобы уточнить детали, ответить на вопросы и предложить оптимальное решение для ваших задач.
+		form.form-contacts.js-form-contacts
+			input.form-contacts__input(type="text" placeholder="Имя")
+			input.form-contacts__input.js-telephone(type="phone" placeholder="+7 (___) ___-__-__")
+
+			.form-contacts__button
+				+button("Отправить", "button--white")

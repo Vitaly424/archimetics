@@ -1,0 +1,32 @@
+.main-reviews {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	&__list {
+	}
+
+	&__slider {
+		cursor: pointer;
+	}
+
+	&__pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: static !important;
+		margin-top: 25px;
+
+		.swiper-pagination-bullet {
+			opacity: 1;
+			width: 5px;
+			height: 5px;
+			background-color: var(--color-muted-secondary);
+		}
+
+		.swiper-pagination-bullet-active {
+			width: 7px;
+			height: 7px;
+			background-color: var(--color-accent);
+		}
+	}
+}

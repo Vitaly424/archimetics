@@ -1,0 +1,18 @@
+extends ../layout/main-layout.pug
+
+include ../components/ui/page-title/page-title.pug
+
+block variables 
+	-	var title = "Карточка портфолио"
+	-	var includeContacts = true
+
+block page-top 
+	+page-title([
+		{label: 'Главная', href: '/'},
+		{label: 'Портфолио', href: '/portfolio.html'},
+		{label: 'Эковилла “Сосновый берег”'},
+		], 'Эковилла “Сосновый берег” ')
+
+block content 
+	include ../views/card-portfolio/card-portfolio-top/card-portfolio-top
+	include ../views/card-portfolio/card-portfolio-about/card-portfolio-about

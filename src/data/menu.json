@@ -1,0 +1,8 @@
+{
+	"items": [
+		{ "text": "Услуги", "url": "/services.html" },
+		{ "text": "Портфолио", "url": "/portfolio.html" },
+		{ "text": "Блог", "url": "/blog.html" },
+		{ "text": "Контакты", "url": "/contacts.html" }
+	]
+}

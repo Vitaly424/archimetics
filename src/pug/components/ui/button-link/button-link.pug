@@ -1,0 +1,6 @@
+mixin button-link(text, buttonClass, url)
+  a.button-link(
+      class=buttonClass, 
+      target="_blank", 
+      href=url ? url : '#'
+  ) #{text}

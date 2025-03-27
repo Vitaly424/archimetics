@@ -1,0 +1,19 @@
+html {
+	scroll-behavior: smooth;
+	background-color: rgb(39, 39, 39);
+	overflow-x: hidden;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
+	font-family: var(--font-main);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+img {
+	display: block;
+}

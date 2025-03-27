@@ -1,0 +1,28 @@
+include ../../../components/ui/section-title/section-title.pug
+include ../../../components/ui/button-link/button-link
+include ../../../components/news-card/news-card
+
+section.main-news
+	.container
+		.main-news__inner
+			+section-title("Блог", "Новости компании")
+			
+			.main-news__slider
+				.swiper.js-main-news-slider
+					.swiper-wrapper
+						each item in news.items.slice(0, 3)
+							.swiper-slide
+								+news-card(
+									item.title, 
+									item.description, 
+									item.date, 
+									item.urlImage, 
+									item.altImage, 
+									item.urlLink
+								)
+
+				.main-news__pagination.js-main-news-pagination
+
+			.main-news__buttons
+				+button-link('Перейти ко всем новостям', '', '/portfolio.html')
+				+button-link('Подписаться на рассылку', 'button-link--transparent')

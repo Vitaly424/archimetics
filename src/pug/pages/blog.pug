@@ -1,0 +1,16 @@
+extends ../layout/main-layout.pug
+
+include ../components/ui/page-title/page-title.pug
+
+block variables 
+	-	var title = "Блог"
+
+block page-top 
+	+page-title([
+		{label: 'Главная', href: '/'},
+		{label: 'Блог'},
+		], 'Блог')
+
+block content
+	include ../views/blog/blog-filter/blog-filter
+	include ../views/blog/blog-news/blog-news

@@ -1,0 +1,17 @@
+include ../../../components/ui/section-title/section-title.pug
+include ../../../components/ui/button-link/button-link.pug
+
+section.main-inspiration
+	.container 
+		.main-inspiration__inner
+			+section-title("Портфолио", "Создаем пространства, которые вдохновляют", true)(class="main-inspiration__header--mobile")
+
+			.main-inspiration__info
+				+section-title("Портфолио", "Создаем пространства, которые вдохновляют", true)(class="main-inspiration__header")
+				
+				.main-inspiration__content
+					p.main-inspiration__description Мы — команда архитекторов, дизайнеров и инженеров, которые превращают идеи в реальность. Наше проектное бюро специализируется на создании уникальных архитектурных решений, современных интерьеров и функциональных пространств. Мы работаем с любовью к деталям и стремимся к тому, чтобы каждый наш проект становился не просто зданием, а местом, где хочется жить, работать и творить. 
+
+					+button-link('Посмотреть проекты', '', '/portfolio.html')
+			.main-inspiration__images 
+				img(src="../../../../img/inspiration.jpg", alt="Создаем пространства, которые вдохновляют" width="679" height="513")

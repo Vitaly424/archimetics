@@ -1,0 +1,8 @@
+mixin nav-header
+	.nav-header.js-nav-header
+		ul.nav-header__list
+			each item in menu.items
+				li.nav-header__item
+					a.nav-header__link(href=item.url, target="_blank")= item.text
+
+		a.nav-header__phone(href="tel:+70000000000") +7 (000) 000-00-00

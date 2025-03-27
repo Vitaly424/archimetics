@@ -1,0 +1,25 @@
+include ../svg-icon/svg-icon
+
+.widget 
+	button.widget__trigger.js-widget-trigger(type="button")
+		+svg-icon('message')
+
+	.widget__content.js-widget-content
+		button.widget__close.js-widget-close(type="button")
+			+svg-icon('plus')
+		h3.widget__title Свяжитесь с нами любым<br/> удобным способом!
+		p.widget__description Мы всегда на связи и готовы ответить на ваши вопросы! Выберите удобный способ связи,  оперативно ответим и обсудим ваш проект!
+
+		.widget__socials
+			a(href="#")
+				.widget__icon
+					+svg-icon('whatsapp')
+				span Whats App
+			a(href="#")
+				.widget__icon
+					+svg-icon('telegram')
+				span Telegram
+			a(href="#") 
+				.widget__icon
+					+svg-icon('phone')
+				span Звонок

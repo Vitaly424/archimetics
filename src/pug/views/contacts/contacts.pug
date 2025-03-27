@@ -1,0 +1,80 @@
+include ../../components/ui/title/title.pug
+include ../../components/ui/svg-icon/svg-icon.pug
+
+section.contacts
+	.container
+		.contacts__inner
+			.contacts__col
+				.contacts__wrapper
+					.contacts__header
+						+title(3, 'Связь с нами')
+					.contacts__content
+						.contacts__group
+							p.contacts__label Телефон:
+							.contacts__value 
+								a(href="tel:+70000000000") +7 (000) 000-00-00
+						.contacts__group
+							p.contacts__label E-mail:
+							.contacts__value 
+								a(href="mailto:info@arkhimetika.ru")  info@arkhimetika.ru 
+
+			.contacts__col
+				.contacts__wrapper
+					.contacts__header
+						+title(3, 'Адрес')
+					.contacts__content
+						.contacts__group
+							.contacts__value 
+								span Г. Казань, ул. Пушкина, д. 101, этаж 4, офис 101
+						.contacts__group
+							p.contacts__label Время работы:
+							.contacts__value 
+								span пн-пт: 09:00 - 18:00
+
+			.contacts__col
+				.contacts__wrapper
+					.contacts__header
+						+title(3, 'Инфо')
+					.contacts__content
+						.contacts__group
+							p.contacts__label Юр. лицо:
+							.contacts__value 
+								span ООО “Архиметика”
+						.contacts__group
+							p.contacts__label ИНН:
+							.contacts__value 
+								span 1657148735
+						.contacts__group
+							p.contacts__label КПП
+							.contacts__value 
+								span 166001001
+						.contacts__group
+							p.contacts__label ОГРН:
+							.contacts__value 
+								span 11141690084634
+
+			.contacts__col
+				.contacts__wrapper
+					.contacts__header
+						+title(3, 'Социальные сети и мессенджеры')
+					.contacts__content
+						.contacts__socials
+							a.contacts__social(href="#")
+								div
+									+svg-icon('Instagram')
+									span Instagram
+								+svg-icon('arrow-big')
+							a.contacts__social(href="#")
+								div
+									+svg-icon('telegram')
+									span Telegram
+								+svg-icon('arrow-big')
+							a.contacts__social(href="#")
+								div
+									+svg-icon('whatsapp')
+									span Whats App
+								+svg-icon('arrow-big')
+
+
+	.contacts__map
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1283d4f71794f992cf44f7e22286c946050d574de581c9a922157aa6aa45f02b&amp;source=constructor" width="100%" height="810" frameborder="0"   scrolling="no"></iframe>

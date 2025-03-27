@@ -1,0 +1,134 @@
+.widget {
+	&__trigger {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		z-index: 10;
+		background-color: var(--color-accent);
+
+		transition: background-color 0.2s linear;
+		&:hover {
+			background-color: var(--color-primary);
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+			fill: var(--color-secondary);
+		}
+	}
+
+	&__content {
+		display: none;
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		z-index: 10;
+
+		padding: 50px 25px 25px;
+		border-radius: 5px;
+		max-width: 453px;
+		background-color: #f9f9f9;
+
+		transition: all 0.2s linear;
+
+		@media (max-width: 490px) {
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+		}
+
+		&--active {
+			display: block;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		right: 14px;
+		top: 14px;
+
+		&:hover {
+			svg {
+				fill: var(--color-accent);
+			}
+		}
+
+		svg {
+			transition: 0.2s linear;
+			transform: rotate(45deg);
+			width: 27px;
+			height: 22px;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 20px;
+		margin-bottom: 25px;
+	}
+
+	&__description {
+		margin-bottom: 50px;
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		gap: 27px;
+
+		@media (max-width: 490px) {
+			flex-direction: column;
+		}
+
+		span {
+			text-align: center;
+			color: var(--color-primary);
+		}
+
+		a {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 12px;
+
+			@media (max-width: 490px) {
+				width: 100%;
+				max-width: 100%;
+			}
+
+			&:hover {
+				.widget__icon {
+					background-color: var(--color-primary);
+				}
+			}
+		}
+	}
+
+	&__icon {
+		background-color: var(--color-accent);
+		padding: 10px 10px;
+		width: 116px;
+		min-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		transition: background-color 0.2s linear;
+
+		@media (max-width: 490px) {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		svg {
+			fill: var(--color-secondary);
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

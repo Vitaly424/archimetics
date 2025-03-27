@@ -1,0 +1,34 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 0;
+	background-color: var(--color-secondary);
+	z-index: 20;
+
+	&__logo {
+		flex-shrink: 0;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 40px;
+	}
+
+	&__phone {
+		flex-shrink: 0;
+		color: #000;
+		transition: color 0.2s linear;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+
+		&:hover {
+			color: var(--color-accent);
+		}
+	}
+}

@@ -1,0 +1,11 @@
+include ../../../components/ui/section-title/section-title.pug
+include ../../../components/ui/button-link/button-link.pug
+include ../../../components/project-card/project-card.pug
+include ../../../components/our-services/our-services.pug
+
+section.main-services
+	.container 
+		.main-services__inner
+			+section-title("Услуги", "Чем мы занимаемся")
+
+			+our-services

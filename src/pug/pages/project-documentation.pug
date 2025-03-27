@@ -1,0 +1,17 @@
+extends ../layout/main-layout.pug
+
+include ../components/ui/page-title/page-title.pug
+
+block variables 
+	-	var title = "Проектная документация (П стадия)"
+	-	var includeContacts = true
+
+block page-top 
+	+page-title([
+		{label: 'Главная', href: '/'},
+		{label: 'Услуги', href: '/services.html'},
+		{label: 'Проектная документация (П стадия)'},
+		], 'Проектная документация (П стадия)')
+
+block content
+	include ../views/project-documentation/project-documentation

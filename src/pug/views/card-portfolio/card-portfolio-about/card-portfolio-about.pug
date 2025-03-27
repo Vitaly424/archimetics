@@ -1,0 +1,29 @@
+include ../../../components/ui/title/title
+include ./card-portfolio-drawings/card-portfolio-drawings
+include ./card-portfolio-projects/card-portfolio-projects
+ 
+section.card-portfolio-about
+	.container
+		.card-portfolio-about__inner
+			+title(2, 'О проекте')
+
+			.card-portfolio-about__info
+				ul.card-portfolio-about__list
+					li.card-portfolio-about__item
+						h4 Статус:
+						p  Завершен (2024 год)
+					li.card-portfolio-about__item
+						h4 Площадь:
+						p   280 м²
+					li.card-portfolio-about__item
+						h4 Тип объекта:
+						p  Жилой объект
+					li.card-portfolio-about__item
+						h4 Срок реализации:
+						p  1,5 года
+
+				p.card-portfolio-about__description Эко вилла "Сосновый берег" — это современный загородный дом, спроектированный с учетом принципов устойчивого развития и гармонии с природой. Проект включает в себя энергоэффективные решения, такие как солнечные панели, системы рекуперации тепла и использование экологичных материалов. Визуально вилла сочетает минимализм и натуральные текстуры, а большие панорамные окна открывают вид на сосновый лес.
+
+
+			+card-portfolio-drawings
+			+card-portfolio-projects

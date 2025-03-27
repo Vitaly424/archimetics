@@ -1,0 +1,17 @@
+extends ../layout/main-layout.pug
+
+include ../components/ui/page-title/page-title.pug
+
+block variables 
+   - var title = "Услуги"
+   - var includeContacts = true
+
+block page-top 
+   +page-title([
+      { label: 'Главная', href: '/' },
+      { label: 'Услуги' },
+         
+      ], 'Услуги')
+
+block content
+   include ../views/services/services

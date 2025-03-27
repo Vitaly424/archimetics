@@ -1,0 +1,8 @@
+include ../breadcrumbs/breadcrumbs.pug
+include ../title/title.pug
+
+mixin page-title(historyItems, title)
+	.container
+		.page-title
+			+breadcrumbs(historyItems)
+			+title(1, title)

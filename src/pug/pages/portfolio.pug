@@ -1,0 +1,16 @@
+extends ../layout/main-layout.pug
+
+include ../components/ui/page-title/page-title.pug
+
+block variables 
+	-	var title = "Портфолио"
+	-	var includeContacts = true
+
+block page-top 
+	+page-title([
+		{label: 'Главная', href: '/'},
+		{label: 'Портфолио'},
+		], 'Портфолио')
+
+block content
+	include ../views/portfolio/portfolio

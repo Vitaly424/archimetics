@@ -1,0 +1,12 @@
+include ./project-card-info/project-card-info
+
+mixin project-card(title, urlImage, altImage, description, info)
+	.project-card&attributes(attributes)
+		+project-card-info(title, description, info)
+
+		.project-card__image 
+			img(src=urlImage alt=altImage width="453" height="607")
+		
+		.project-card__content 
+			h3.project-card__title=title
+			img.project-card__decor(src="../../../img/icons/arrow.svg" alt="" width="19" height="19")

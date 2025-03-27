@@ -1,0 +1,30 @@
+include ../../components/ui/button/button.pug
+include ../../components/project-card/project-card.pug
+include ../../components/portfolio-category/portfolio-category
+
+section.portfolio
+	.container
+		.portfolio__inner
+			+portfolio-category
+
+			.portfolio__list
+				each item, index in projects.items
+					if index < 4
+						+project-card(
+							item.title, 
+							item.urlImage, 
+							item.altImage, 
+							item.description,
+							item.info
+						)
+					else
+						+project-card(
+							item.title, 
+							item.urlImage, 
+							item.altImage, 
+							item.description,
+							item.info
+						)(class="project-card--hidden-mobile")
+
+			.portfolio__btn
+				+button('Загрузить еще')

@@ -1,0 +1,41 @@
+.button-link {
+	display: inline-block;
+	padding: 12px 20px;
+	width: 100%;
+	background-color: var(--color-primary);
+	border-radius: 21px;
+
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+
+	transition: color 0.2s linear, background-color 0.2s linear;
+
+	@media (max-width: 375px) {
+		font-size: 16px;
+	}
+
+	&:hover {
+		background-color: var(--color-accent);
+		color: var(--color-secondary);
+	}
+
+	&--white {
+		background-color: var(--color-secondary);
+		color: #000;
+	}
+
+	&--transparent {
+		background-color: var(--color-secondary);
+		border: 1px solid var(--color-primary);
+		color: #000;
+
+		&:hover {
+			background-color: var(--color-accent);
+			border-color: var(--color-accent);
+		}
+	}
+}

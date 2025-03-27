@@ -1,0 +1,6 @@
+mixin title(level, text)
+	case level
+		when 1: h1.title #{text}
+		when 2: h2.title #{text}
+		when 3: h3.title #{text}
+		default: h2.title #{text}

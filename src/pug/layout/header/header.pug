@@ -1,0 +1,13 @@
+include ../../components/ui/button-burger/button-burger
+include ../nav-header/nav-header
+
+header.header
+	.container
+		.header__inner
+			a.header__logo(href="/")
+				img(src="../../../img/icons/logo.svg" alt="Логотип архиметико")
+			
+			+nav-header
+			+button-burger
+	
+			a.header__phone(href="tel:+70000000000") +7 (000) 000-00-00

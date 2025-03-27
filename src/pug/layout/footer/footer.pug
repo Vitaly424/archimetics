@@ -1,0 +1,27 @@
+include ../../components/ui/svg-icon/svg-icon
+
+footer.footer
+	.footer__inner
+		.container
+			.footer__content
+				a.header__logo(href="/")
+					img(src="../../../img/icons/logo.svg" alt="Логотип архиметико")
+				
+				.nav-footer
+					ul.nav-footer__list
+						each item in menu.items
+							li.nav-footer__item
+								a.nav-footer__link(href=item.url, target="_blank")= item.text
+		
+				a.footer__phone(href="tel:+70000000000") +7 (000) 000-00-00
+				
+
+				.footer__socials 
+					a(href="#") 
+						+svg-icon('Instagram')
+					a(href="#") 
+						+svg-icon('telegram')
+					a(href="#") 
+						+svg-icon('whatsapp')
+
+	p.footer__copy Архиметика

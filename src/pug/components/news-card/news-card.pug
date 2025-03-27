@@ -1,0 +1,18 @@
+include ../ui/svg-icon/svg-icon.pug
+
+
+mixin news-card(title, description, date, urlImage, altImage, urlLink)
+	a.news-card(href=urlLink target="_blank")
+		.news-card__image 
+			img(src=urlImage alt=altImage)
+		
+		.news-card__content
+			h3.news-card__title=title
+			p.news-card__description=description
+		 
+
+		.news-card__footer
+			p.news-card__date=date
+			.news-card__link
+				span  Читать статью
+				+svg-icon("arrow-big")

@@ -1,0 +1,26 @@
+include ../../../components/ui/button-link/button-link.pug
+
+
+mixin project-card-info(title, description, info)
+	.project-card-info
+		.project-card-info__header
+			h4.project-card-info__title=title
+			
+			p.project-card-info__text=description
+ 
+		div
+			ul.project-card-info__list
+				li.project-card-info__item
+					h4 Статус:
+					p=info.status
+				li.project-card-info__item
+					h4 Площадь:
+					p=info.square
+				li.project-card-info__item
+					h4 Тип объекта:
+					p=info.object_type
+				li.project-card-info__item
+					h4 Срок реализации:
+					p=info.implementation_period
+
+			+button-link('Подробнее о проекте', '', '/card-portfolio.html')

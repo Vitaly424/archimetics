@@ -1,0 +1,45 @@
+.main-hero {
+	background-image: url('../../../img/home-first-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 645px;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 40px;
+	padding-top: 90px;
+
+	@media (max-width: 1024px) {
+		min-height: 100vh;
+	}
+
+	&__content {
+		max-width: 724px;
+	}
+
+	&__title {
+		max-width: 375px;
+		margin-bottom: 40px;
+		font-weight: 600;
+		font-size: 32px;
+		color: var(--color-secondary);
+
+		@media (max-width: 375px) {
+			font-size: 24px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 40px;
+		font-size: 20px;
+		line-height: 1.2;
+		color: var(--color-secondary);
+
+		@media (max-width: 375px) {
+			font-size: 16px;
+		}
+	}
+
+	&__button {
+		max-width: 654px;
+	}
+}

@@ -1,0 +1,9 @@
+mixin breadcrumbs(historyItems)
+  nav.breadcrumbs
+    ul
+      each item, index in historyItems
+        if index < historyItems.length - 1
+          li
+            a.breadcrumbs__item(href=item.href) #{item.label}
+        else
+          li #{item.label}

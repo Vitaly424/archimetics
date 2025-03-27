@@ -1,0 +1,31 @@
+.portfolio {
+	margin-top: 40px;
+	margin-bottom: 90px;
+
+	@media (max-width: 1024px) {
+		margin-bottom: 50px;
+	}
+
+	&__list {
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 40px;
+
+		@media (max-width: 1200px) {
+			gap: 20px;
+		}
+
+		@media (max-width: 1024px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width: 639px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__btn {
+		margin-top: 60px;
+	}
+}
