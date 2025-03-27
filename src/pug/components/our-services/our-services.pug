@@ -1,7 +1,7 @@
 include ../ui/button-link/button-link.pug
 include ../ui/svg-icon/svg-icon.pug
 
-mixin our-services
+mixin our-services(url)
 	.our-services
 		.our-services__col
 			.our-services__wrap
@@ -9,7 +9,7 @@ mixin our-services
 
 				p.our-services__description Разработка полного комплекта проектной документации в соответствии с нормативными требованиями. Включает архитектурные, конструктивные и инженерные решения, необходимые для согласования и дальнейшего строительства. Обеспечиваем точность, надежность и соблюдение всех стандартов.
 
-				+button-link("Подробнее", '', '/archimetics/project-documentation.html')
+				+button-link("Подробнее", '', url)
 
 			.our-services-list.js-accordion-services-one
 				.ac
