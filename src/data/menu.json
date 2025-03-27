@@ -1,8 +1,8 @@
 {
 	"items": [
-		{ "text": "Услуги", "url": "/services.html" },
-		{ "text": "Портфолио", "url": "/portfolio.html" },
-		{ "text": "Блог", "url": "/blog.html" },
-		{ "text": "Контакты", "url": "/contacts.html" }
+		{ "text": "Услуги", "url": "/archimetics/services" },
+		{ "text": "Портфолио", "url": "/archimetics/portfolio" },
+		{ "text": "Блог", "url": "/archimetics/blog" },
+		{ "text": "Контакты", "url": "/archimetics/contacts" }
 	]
 }

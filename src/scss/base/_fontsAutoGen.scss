@@ -13,13 +13,6 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: Onest;
-	font-display: swap;
-	src: url("../fonts/Onest-Bold.woff2") format("woff2"), url("../fonts/Onest-Bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
 	font-family: Manrope;
 	font-display: swap;
 	src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
@@ -31,6 +24,13 @@
 	font-display: swap;
 	src: url("../fonts/Onest-Regular.woff2") format("woff2"), url("../fonts/Onest-Regular.woff") format("woff");
 	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Onest;
+	font-display: swap;
+	src: url("../fonts/Onest-Bold.woff2") format("woff2"), url("../fonts/Onest-Bold.woff") format("woff");
+	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
